@@ -10,7 +10,10 @@
 // I AM NOT DONE
 
 // Put your function here!
-// fn calculate_apple_price {
+fn calculate_apple_price(quantity: i32) -> i32 {
+    let unit_price = if quantity > 40 { 1 } else { 2 };
+    unit_price * quantity
+}
 
 // Don't modify this function!
 #[test]
